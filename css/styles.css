@@ -121,7 +121,7 @@ position: relative;
 .current::after {
   content: "";
   position: absolute;
-  bottom: -32px;
+  bottom: -31px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -661,6 +661,8 @@ letter-spacing: 0.03em;
 }
 
 .thumb-portfolio-text {
+  display: flex;
+  align-items: center;
   position: absolute;
   font-style: normal;
   font-weight: 400;
@@ -673,8 +675,6 @@ letter-spacing: 0.03em;
   height: 100%;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 63px;
-  padding-bottom: 63px;
   overflow: auto;
   background: rgba(33, 150, 243, 0.9);
   top: 0;
@@ -684,5 +684,8 @@ letter-spacing: 0.03em;
 
 .portfolio-item:hover .thumb-portfolio-text {
   transform: translateY(0);
+}
 
+.portfolio-item:focus .thumb-portfolio-text {
+  transform: translateY(0);
 }
